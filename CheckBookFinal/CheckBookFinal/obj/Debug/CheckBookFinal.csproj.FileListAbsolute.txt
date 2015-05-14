@@ -1,0 +1,21 @@
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\CheckBookFinal.exe.config
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.csprojResolveAssemblyReference.cache
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\MainWindow.baml
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\MainWindow.g.cs
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\App.g.cs
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal_MarkupCompile.cache
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.g.resources
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.Properties.Resources.resources
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.csproj.GenerateResource.Cache
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\CheckBookFinal.exe
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\CheckBookFinal.pdb
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\EntityFramework.dll
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\EntityFramework.SqlServer.dll
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\EntityFramework.xml
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\bin\Debug\EntityFramework.SqlServer.xml
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.exe
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.pdb
+F:\Final CSharp\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.Migrations.InitialCreate.resources
+C:\Users\tarak\Source\Repos\FinalProject\CheckBookFinal\CheckBookFinal\bin\Debug\CheckBookFinal.exe.config
+C:\Users\tarak\Source\Repos\FinalProject\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.exe
+C:\Users\tarak\Source\Repos\FinalProject\CheckBookFinal\CheckBookFinal\obj\Debug\CheckBookFinal.pdb
