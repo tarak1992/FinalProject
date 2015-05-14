@@ -113,7 +113,7 @@ namespace CheckBookFinal
                                 _Db.Accounts.Add(_newInfo);
                                 _Db.SaveChanges();
                             }
-                        },
+                        }
                     };
                  }
             }
