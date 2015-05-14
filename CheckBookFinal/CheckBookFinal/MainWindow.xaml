@@ -19,10 +19,10 @@
         <GridSplitter Width="5" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.RowSpan="2" />
         <GridSplitter Width="5" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="1" Grid.RowSpan="2" />
         <GridSplitter Height="5" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Grid.ColumnSpan="5" Grid.Row="1" />
-        <DataGrid x:Name="transactionsDataGrid" IsSynchronizedWithCurrentItem="True" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Transactions}" RowDetailsVisibilityMode="VisibleWhenSelected" Grid.Row="1">
+        <DataGrid x:Name="transactionsDataGrid" IsSynchronizedWithCurrentItem="True" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Transactions,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" RowDetailsVisibilityMode="VisibleWhenSelected" Grid.Row="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Account.Name}" Header="Account" Width="SizeToHeader"/>
-                <DataGridTextColumn x:Name="amountColumn" Binding="{Binding Amount}" Header="Amount" Width="SizeToHeader"/>
+                <DataGridTextColumn Binding="{Binding Account.Name ,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Header="Account" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="amountColumn" Binding="{Binding Amount ,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Header="Amount" Width="SizeToHeader"/>
 
                 <DataGridTemplateColumn x:Name="dateColumn" Header="Date" Width="SizeToHeader">
                     <DataGridTemplateColumn.CellTemplate>
@@ -31,8 +31,8 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn x:Name="payeeColumn" Binding="{Binding Payee}" Header="Payee" Width="SizeToHeader"/>
-                <DataGridTextColumn x:Name="tagColumn" Binding="{Binding Tag}" Header="Tag" Width="*"/>
+                <DataGridTextColumn x:Name="payeeColumn" Binding="{Binding Payee,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Header="Payee" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="tagColumn" Binding="{Binding Tag,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Header="Tag" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
         <Grid DataContext="{Binding NewTransaction}"  Grid.Column="3" Margin="0,3,0,2" Grid.RowSpan="2"  >

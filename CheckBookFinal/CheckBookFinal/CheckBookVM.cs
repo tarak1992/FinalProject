@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using System.Windows;
+using System.Drawing;
+using System.Windows.Media;
 
 namespace CheckBookFinal
 {
@@ -16,6 +18,30 @@ namespace CheckBookFinal
             }
 
             CbDb _Db = new CbDb();
+            private int _RowsPerPage = 5;
+            private int _CurrentPage = 1;
+            public int CurrentPage
+            {
+                get { return _CurrentPage; }
+                set { _CurrentPage = value; OnPropertyChanged(); OnPropertyChanged("CurrentTransactions"); }
+            }
+
+            public IEnumerable<Transaction> CurrentTransactions
+            {
+                get { return Transactions.Skip((_CurrentPage - 1) * _RowsPerPage).Take(_RowsPerPage); }
+            }
+
+            public DelegateCommand MoveNext
+            {
+                get
+                {
+                    return new DelegateCommand
+                    {
+                        ExecuteFunction = _ => CurrentPage++,
+                        CanExecuteFunction = _ => CurrentPage * _RowsPerPage < Transactions.Count
+                    };
+                }
+            }
 
             public Transaction _NewTransaction = new Transaction { Date = DateTime.Now };
             public Transaction NewTransaction
@@ -49,12 +75,23 @@ namespace CheckBookFinal
                             _Db.Transactions.Add(_NewTransaction);
                             Account balancesum = (from bal in Accounts where bal == _NewTransaction.Account select bal).Single();
                             balancesum.Balance += _NewTransaction.Amount;
-                            _Db.SaveChanges();
+                           _Db.SaveChanges();
                         }
                      };
                 }
             }
 
+          /*  public static Brush Red
+            {
+                get
+                {
+                    return 
+                    {
+                    Transaction morePayee = (from a in Transactions where a.Amount > _NewTransaction.Amount select a).Single();
+                    }; 
+                }
+            }
+*/
             private Account _newInfo = new Account { };
             public Account newInfo
             {
